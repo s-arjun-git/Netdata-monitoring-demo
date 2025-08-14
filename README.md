@@ -8,15 +8,16 @@ Install Netdata via Docker and visualize system/app performance metrics.
 - Docker
 
 ## Steps
-1. **Pull & Run Netdata**
+## 1. Pull & Run Netdata
+
    ```bash
    docker run -d --name=netdata \
      -p 19999:19999 \
      --cap-add SYS_PTRACE \
      --security-opt apparmor=unconfined \
      netdata/netdata
-     ```
-
+     
+```
 ## 2. Access Dashboard: Visit http://localhost:19999
 
 ## 3. Monitor Metrics: CPU, memory, disk, network, Docker containers.
